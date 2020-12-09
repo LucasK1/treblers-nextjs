@@ -9,7 +9,7 @@ import img3 from './1.jpg';
 
 import './FeelTheReelLong.module.scss';
 
-export default () => {
+const FeelTheReelLong = () => {
   const opts = {
     height:
       window.innerWidth <= 1120 ? (window.innerWidth * 0.8) / (16 / 9) : 720,
@@ -78,3 +78,5 @@ export default () => {
     </div>
   );
 };
+
+export default FeelTheReelLong;

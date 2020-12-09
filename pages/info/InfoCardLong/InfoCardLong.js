@@ -6,7 +6,7 @@ import img1 from '../../../components/Slider/Images/5.jpg';
 
 import './InfoCardLong.module.scss';
 
-export default () => {
+const InfoCardLong = () => {
   const groupMembers = require('./groupMembers.js');
   const peopleToDisplay = groupMembers.default.map((member, i) => (
     <PersonalInfo key={i} src={member.src} name={member.name} />
@@ -105,3 +105,5 @@ export default () => {
     </div>
   );
 };
+
+export default InfoCardLong;

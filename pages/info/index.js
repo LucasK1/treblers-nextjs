@@ -9,7 +9,7 @@ import InfoCardLong from './InfoCardLong/InfoCardLong';
 import FeelTheReel from './FeelTheReel/FeelTheReel';
 import Offer from './Offer/Offer';
 import FeelTheReelLong from './FeelTheReelLong/FeelTheReelLong';
-import OfferLong from './OfferLong/OfferLong';
+import OfferLong from '../oferta/OfferLong';
 import Shows from './Shows/Shows';
 
 import './Info.module.scss';

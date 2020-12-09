@@ -3,7 +3,7 @@ import ScrollIntoView from 'react-scroll-into-view';
 
 import './Logo.module.scss';
 
-export default () => {
+const Logo = () => {
   return (
     <div className="page-logo">
       <ScrollIntoView 
@@ -17,4 +17,6 @@ export default () => {
       </ScrollIntoView>         
     </div>
   );
-}
+};
+
+export default Logo;

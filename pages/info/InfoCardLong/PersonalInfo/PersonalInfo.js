@@ -2,7 +2,7 @@ import React from 'react';
 
 import './PersonalInfo.module.scss';
 
-export default (props) => {
+const PersonalInfo = props => {
   return (
     <div className="personal-info-card">
       <div className="image-wrapper">
@@ -15,3 +15,5 @@ export default (props) => {
     </div>
   );
 };
+
+export default PersonalInfo;

@@ -1,18 +1,20 @@
-import React from "react";
-import Header from "../components/Header/Header";
-// import Slider from "../components/Slider/Slider";
+import React from 'react';
+import Header from '../components/Header/Header';
+import Slider from "../components/Slider/Slider";
 // import Gallery from "./galeria";
-// import Videos from "../components/Videos/Videos";
+import Videos from "../components/Videos/Videos";
 // import Info from "./info";
-// import Footer from "../components/Footer/Footer";
+import Footer from '../components/Footer/Footer';
 
-export default () => (
+const MainPage = () => (
   <>
     <Header />
-    {/* <Slider />
-    <Info />
+     <Slider />
+    {/*<Info />
+    <Gallery />*/}
     <Videos />
-    <Gallery />
-    <Footer /> */}
+    <Footer />
   </>
 );
+
+export default MainPage;

@@ -4,7 +4,7 @@ import React, { useEffect } from 'react';
 
 import './Blackbox.module.scss';
 
-export default ({ isOn, children }) => {
+const Blackbox = ({ isOn, children }) => {
   // const history = useHistory();
 
   const enableScrolling = () => document.body.classList.remove('locked');
@@ -17,12 +17,36 @@ export default ({ isOn, children }) => {
 
   return (
     <Link href="/">
-      <div
-        className={`helper-blackbox ${isOn ? 'active' : ''}`}
-        // onClick={() => history.push("/")}
-      >
-        {children}
-      </div>
+      <>
+        <div
+          className={`helper-blackbox ${isOn ? 'active' : ''}`}
+          // onClick={() => history.push("/")}
+        >
+          {children}
+        </div>
+        <style jsx>
+          {`
+            .helper-blackbox {
+              width: 100vw;
+              position: fixed;
+              top: 0;
+              height: 100vh;
+              z-index: 2000;
+              background: rgba(#000, 0.8);
+              transition: transform 0.3s, opacity 0.3s;
+              opacity: 0;
+              transform: translate3d(0, -100vh, 0);
+
+              &.active {
+                opacity: 1;
+                transform: translate3d(0, 0, 0);
+              }
+            }
+          `}
+        </style>
+      </>
     </Link>
   );
 };
+
+export default Blackbox;

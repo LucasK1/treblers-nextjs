@@ -3,7 +3,7 @@ import React from 'react';
 
 import './FeelTheReel.module.scss';
 
-export default () => {
+const FeelTheReel = () => {
   const history = useHistory();
 
   return (
@@ -35,3 +35,5 @@ export default () => {
     </Link>
   );
 };
+
+export default FeelTheReel;

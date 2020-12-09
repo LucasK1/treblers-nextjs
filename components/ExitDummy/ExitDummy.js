@@ -4,7 +4,7 @@ import React from 'react';
 
 import './ExitDummy.module.scss';
 
-export default () => {
+const ExitDummy = () => {
   // const history = useHistory();
   return (
     <Link href="/">
@@ -15,3 +15,5 @@ export default () => {
     </Link>
   );
 };
+
+export default ExitDummy;
