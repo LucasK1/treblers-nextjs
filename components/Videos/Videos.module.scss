@@ -1,0 +1,85 @@
+@import "../../styles/helpers.scss";
+@import "../../styles/variables.scss";
+
+.page-videos-wrapper {
+  background: #151515;
+  padding-top: 40px;
+  box-shadow: 0 -3px 6px rgba(#000, 0.54);
+}
+
+.page-videos {
+  display: flex;
+  position: relative;
+  padding-bottom: 20px;
+  .video {
+    width: 50%;
+  }
+
+  &__button-wrapper {
+    color: $background-color;
+
+    padding-bottom: 24px;
+    .link-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    a {
+      font-weight: 800;
+      padding: 4px 24px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      color: $text-color;
+      background-color: #7db9b9;
+      border-radius: 6px;
+
+      box-shadow: 0 1px 3px #555;
+      transition: transform 0.3s;
+
+      &:hover {
+        transform: scale(1.12);
+      }
+    }
+
+    span {
+      padding-right: 20px;
+      font-size: 20px;
+      text-transform: uppercase;
+    }
+
+    .icon-wrapper {
+      font-size: 30px;
+    }
+  }
+}
+
+.page-videos-button {
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: $background-color;
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: right;
+    transition: 0.4s;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+@media (max-width: $container-width) {
+  .page-videos {
+    display: block;
+    .video {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+@import "../../styles/variables.scss";
+
+$dummy-position: calc(calc(100% - #{$container-width}) / 2);
+
+.exit-dummy {
+  position: absolute;
+  top: 45px;
+  right: 20px;
+  right: calc(#{$dummy-position} + 20px);
+  z-index: 10000;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.4s, box-shadow 0.4s;
+  @media (min-width: 1280px) {
+    &:hover {
+      background-color: #ccc;
+      box-shadow: 0 3px 6px #555;
+    }
+  }
+  .exit-dummy-line {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: darken($background-color, 40%);
+    transform: translate(5px, 23px) rotate(45deg);
+    &.opposite {
+      transform: translate(5px, 23px) rotate(-45deg);
+    }
+  }
+}
+
+@media (max-width: $container-width) {
+  .exit-dummy {
+    top: 50px;
+    right: 20px;
+    .exit-dummy-line {
+      width: 25px;
+    }
+  }
+}
+
+.page-gallery {
+  .exit-dummy {
+    top: 45px;
+    right: 25px;
+    @media (max-width: $container-width) {
+      right: 5px;
+    }
+  }
+  .exit-dummy-line {
+    background: #fff;
+    box-shadow: 0px 0px 3px #000;
+  }
+}

@@ -1,0 +1,16 @@
+.helper-blackbox {
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: 2000;
+  background: rgba(#000, 0.8);
+  transition: transform 0.3s, opacity 0.3s;
+  opacity: 0;
+  transform: translate3d(0, -100vh, 0);
+
+  &.active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

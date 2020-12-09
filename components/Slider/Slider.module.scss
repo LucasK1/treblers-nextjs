@@ -1,0 +1,23 @@
+@import "../../styles/variables.scss";
+
+.page-slider {
+  height: 100vh;
+  z-index: -1000;
+}
+
+.page-slider-container {
+  position: relative;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 6px rgba(#000, 0.54);
+}
+
+@media (orientation: portrait) and (max-width: $phone-breakpoint) {
+  .page-slider {
+    height: 300px;
+  }
+}
+@media (orientation: portrait) and (min-width: $phone-breakpoint) and (max-width: $tablet-breakpoint) {
+  .page-slider {
+    height: 600px;
+  }
+}

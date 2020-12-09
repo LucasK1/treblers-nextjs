@@ -1,0 +1,13 @@
+@import "../../styles/variables.scss";
+
+.scroll-helper {
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (max-width: $phone-breakpoint) {
+  .scroll-helper {
+    height: 50px;
+  }
+}

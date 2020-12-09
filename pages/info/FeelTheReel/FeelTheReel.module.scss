@@ -1,0 +1,21 @@
+@import "../../../styles/variables.scss";
+
+.feel-the-reel {
+  text-align: justify;
+  color: $text-color;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 20px 40px;
+  transition: 0.4s;
+  @media (min-width: 1280px) {
+    &:hover {
+      background: darken($background-color, 10%);
+    }
+  }
+}
+
+@media (max-width: $phone-breakpoint) {
+  .feel-the-reel {
+    padding: 10px;
+  }
+}

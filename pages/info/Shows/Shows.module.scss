@@ -1,0 +1,27 @@
+@import "../../../styles/variables.scss";
+
+.show-item {
+    h3 {
+        font-size: 20px;
+        padding-top: 10px;
+    }
+
+    hr {
+        border: 1px solid $text-color;
+    }
+
+    @media (max-width: $phone-breakpoint) {
+        h3 {
+            font-size: 11px;
+            padding-top: 4px;
+        }
+
+        .show-item-description {
+            margin-bottom: 5px;
+        }
+
+        hr {
+            border-top: transparent;
+        }
+    }
+}

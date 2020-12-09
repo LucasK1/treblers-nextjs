@@ -1,0 +1,69 @@
+@import "../../../../styles/variables.scss";
+
+.personal-info-card {
+  box-sizing: border-box;
+  width: 300px;
+  margin-bottom: 20px;
+
+  .image-wrapper {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    transition: 0.4s;
+
+    img {
+      box-shadow: 0px 0px 20px #555;
+      width: 100%;
+      border-radius: 10px;
+      transition: 0.4s;
+    }
+  }
+
+  .image-wrapper:hover img {
+    box-shadow: 0px 0px 40px #222;
+  }
+
+  .image-wrapper:hover .image-darkener {
+    background: rgba(#000, 0.3);
+  }
+
+  .image-wrapper:hover .info {
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 0px 0px 6px #333;
+  }
+
+  .info {
+    text-align: justify;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: transparent;
+    transition: 0.4s;
+    z-index: 1000;
+
+    @media (max-width: $tablet-breakpoint) {
+      color: #fff;
+      font-size: 30px;
+      text-shadow: 0px 0px 6px #333;
+    }
+  }
+
+  .image-darkener {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: 0.4s;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
