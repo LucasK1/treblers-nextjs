@@ -43,7 +43,7 @@ export default function Shows() {
 
   return (
     <>
-      <Blackbox>
+      {/* <Blackbox> */}
         <div className="container">
           <div
             className="page-info-extended"
@@ -61,7 +61,7 @@ export default function Shows() {
             {pastShows}
           </div>
         </div>
-      </Blackbox>
+      {/* </Blackbox> */}
       <style jsx>{`
         @import './styles/variables.scss';
 

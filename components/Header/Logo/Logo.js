@@ -10,9 +10,18 @@ const Logo = () => {
         selector={'body'}
         smooth={true}
         alignToTop={true}
-        className="page-logo-container">
-        <div className="page-logo-icon"></div>
-        <div className="page-logo-image"></div>
+        className="page-logo-container"
+        style={{ display: 'flex', alignItems: 'center', height: '100px' }}>
+        <div
+          className="page-logo-icon"
+          style={{
+            backgroundImage: `url(${require('../Images/logo-icon.png')})`,
+          }}></div>
+        <div
+          style={{
+            backgroundImage: `url(${require('../Images/logo-treblers.png')})`,
+          }}
+          className="page-logo-image"></div>
       </ScrollIntoView>
       <style jsx>
         {`
@@ -20,7 +29,6 @@ const Logo = () => {
 
           .page-logo {
             height: 100%;
-
             transition: 0.4s;
             cursor: pointer;
 
@@ -28,26 +36,20 @@ const Logo = () => {
               background: rgba(#fff, 0.4);
             }
 
-            .page-logo-container {
-              height: 100px;
-              display: flex;
-              align-items: center;
-            }
-            .page-logo-image {
-              width: 200px;
-              height: 50px;
-              background-image: url('../Images/logo-treblers.png') no-repeat;
-              background-size: contain;
-              background-position: center center;
-            }
-
-            .page-logo-icon {
+            &-icon {
               width: 60px;
               height: 60px;
-              background-image: url('../Images/logo-icon.png') no-repeat;
+              background-repeat: no-repeat;
               background-size: contain;
               background-position: center center;
               transition: 0.8s;
+            }
+            &-image {
+              width: 200px;
+              height: 50px;
+              background-size: contain;
+              background-repeat: no-repeat;
+              background-position: center center;
             }
           }
 

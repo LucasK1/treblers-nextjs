@@ -47,7 +47,7 @@ export default function MenuItem({
           .list-item {
             font-size: 20px;
             height: 100%;
-            margin: 40px 20px;
+            padding: 40px 20px;
             transition: 0.4s;
             text-align: center;
             cursor: pointer;
